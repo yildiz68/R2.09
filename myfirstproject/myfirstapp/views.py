@@ -6,3 +6,10 @@ def index(request):
 
 def formulaire(request):
     return render(request,'myfirstapp/formulaire.html')
+def bonjour(request):
+    nom = request.GET ["nom"]
+    return render(request,'myfirstapp/bonjour.html', {'nnnon': nom})
+
+
+    email = request.GET ["email"]
+    return render(request,'myfirstapp/bonjour.html', {'mail': email})

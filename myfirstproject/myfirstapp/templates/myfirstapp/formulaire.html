@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
- <head>{% load static %}
-<meta charset="UTF-8">
-     <link rel="stylesheet" type="text/css" href="{%static 'myfirstapp/index.css' %}">
-     <title>index</title>
-</head>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title>formulaire</title>
+ </head>
  <body>
- <h1> Hello World </h1>
-</body>
- </html>
+ <form action="/myfirstapp/bonjour" method="get">
+ <label for="nom"> Nom :</label>
+ <input type="text" name="nom"/>
+ <input type="submit" value="envoyer"/>
+ </form>
+ </body>
+</html>
