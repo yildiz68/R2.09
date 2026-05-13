@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ajout d'un Livre</title>
+    <title>Mise à jour d'un Livre</title>
 </head>
 <body>
-<form method="post" action="/bibliotheque/traitement/">
+<form method="post" action="/bibliotheque/traitementupdate/{{ id }}">
     {% csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="envoyer les données">
